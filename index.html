@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semi Robotics homepage</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a class="logo__link" href="./index.html">
+        <img class="logo__img"
+        src="images\Logo_Semi_Robotics_achromatyczne.png"
+        >
+      </a>
+      <div class="header__mobile">
+        <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__icon">
+            <use href="./images/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+   <div style="background-color: #757575; height: 100px;"><p>Hello</p></div>
+  </main>
+  <footer>
+
+  </footer>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu__button--close js-close-menu">
+      <svg class="menu__button--close-icon">
+        <use href="./images/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <div>
+      <ul class="menu-navigation">
+        <li class="menu-navigation__item"><a href="./index.html"
+            class="menu-navigation__link menu-navigation__link--active">Agencja</a></li>
+        <li class="menu-navigation__item"><a href="./portfolio.html" class="menu-navigation__link">Portfolio</a></li>
+        <li class="menu-navigation__item"><a href="" class="menu-navigation__link">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="/js/scroll.js"></script>
+</body>
+
+</html>
