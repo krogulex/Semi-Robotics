@@ -11,9 +11,11 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  color: #212121;
-  font-size: 14px;
-  line-height: 16px;
+  color: #72827F;
+  font-size: 16px;
+  line-height: 1.33;
+  font-weight: 300;
+  letter-spacing: 0.1em;
 }
 
 h1,
@@ -56,9 +58,17 @@ link {
   align-items: center;
 }
 .title .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .title .container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .logo__img {
   height: 40px;
@@ -70,13 +80,15 @@ link {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
-  background-color: #fff;
+  background-color: #D5E1DF;
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .menu-container.is-open {
@@ -85,11 +97,10 @@ link {
 
 .menu__button--close {
   position: absolute;
-  top: 10px;
-  right: 25px;
-  color: #fff;
-  height: 40px;
-  width: 40px;
+  top: 25px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,36 +116,32 @@ link {
 .menu__button--close-icon {
   width: 40px;
   height: 40px;
+  fill: #72827F;
 }
 
-.menu-navigation__link,
-.menu-social__link {
+.menu-navigation__link {
   text-decoration: none;
-  color: #212121;
+  color: #72827F;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-navigation {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 40px;
   letter-spacing: 0.02em;
 }
 
-.menu-navigation__item:not(:last-child) {
-  margin-bottom: 36px;
-}
-
 .menu-navigation__link--active {
-  color: #2196f3;
+  color: #424746;
 }
 
 .menu__button--close-icon:focus,
 .menu__button--close-icon:hover,
 .menu-navigation__link:focus,
 .menu-navigation__link:hover {
-  color: #2196f3;
-  fill: #2196f3;
+  color: #72827F;
+  fill: #72827F;
 }
 
 .menu-contact {
@@ -143,7 +150,7 @@ link {
 
 .menu-contact__phone {
   text-decoration: none;
-  color: #2196f3;
+  color: #72827F;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
@@ -182,7 +189,7 @@ link {
 }
 
 .menu-social__link {
-  color: #2196f3;
+  color: #72827F;
 }
 
 @media screen and (min-width: 768px) {
@@ -212,9 +219,40 @@ link {
 .menu__icon {
   width: 40px;
   height: 40px;
+  fill: #72827F;
 }
 
 .menu__button:focus,
 .menu__button:hover {
-  fill: #2196f3;
+  fill: #72827F;
+}
+
+.title__img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.title__item {
+  padding: 45px 20px;
+  color: #424746;
+}
+
+.title__headline {
+  font-size: 37px;
+  line-height: 1.33;
+  font-weight: 300;
+}
+
+.title__border {
+  display: block;
+  border-top: 1px solid #72827F;
+  border-radius: 5%;
+  width: 60px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.title__text {
+  font-weight: 200;
 }/*# sourceMappingURL=main.css.map */
