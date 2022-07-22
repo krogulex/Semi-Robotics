@@ -1,7 +1,6 @@
 .contact {
     background-color: $color-background-second;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 .contact__headline {
   font-size: 21px;
@@ -11,8 +10,6 @@
 .contact__text {
   margin-bottom: 20px;
 }
-
-
 .contact__button {
   width: 100%;
   max-width: 250px;
@@ -21,8 +18,16 @@
   color: $color-tertiary;
   background-color: $color-button;
   border: none;
+  margin-bottom: 50px;
 }
-
+.contact__img-div {
+  display: flex;
+  justify-content: center;
+}
+.contact__img {
+  width: 100%;
+  max-width: 200px;
+}
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1200px) {
