@@ -57,58 +57,6 @@
 .menu-navigation__link--active {
   color: $color-accent;
 }
-.menu__button--close-icon:focus,
-.menu__button--close-icon:hover,
-.menu-navigation__link:focus,
-.menu-navigation__link:hover {
-  color: $color-primary;
-  fill: $color-primary;
-}
-.menu-contact {
-  margin-top: auto;
-}
-.menu-contact__phone {
-  text-decoration: none;
-  color: $color-primary;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  margin-bottom: 32px;
-}
-
-.menu-contact__mail {
-  text-decoration: none;
-  color: $color-secondary;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  margin-bottom: 64px;
-}
-
-.menu-social__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.menu-social__item {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-}
-.menu-social__item:not(:last-child)::after {
-  content: "";
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-  margin-left: 10px;
-  margin-right: 9px;
-}
-.menu-social__link {
-  color: $color-primary;
-}
 @media screen and (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
+
 }

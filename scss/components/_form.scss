@@ -1,0 +1,36 @@
+  .modal-form__label {
+    color: $color-primary;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+    }
+    &:focus-within {
+      fill: $color-primary;
+    }
+  }
+  .modal-form__input {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus-within {
+      outline: none;
+    }
+  }
+  .modal-form__textarea {
+    resize: none;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:focus-within {
+      outline: none;
+    }
+  }

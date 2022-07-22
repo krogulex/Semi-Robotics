@@ -1,16 +1,17 @@
 @import "../utils/variables";
-@import "../utils/vissualy-hidden";
 
 @import "../base/common.scss";
 @import "../base/container.scss";
-@import "../base/section.scss";
-@import "../base/section__title";
 
 @import "../components/logo";
 @import "../components/menu-mobile";
+@import "../components/border";
+@import "../components/form.scss";
 
 @import "../layout/header";
 @import "../layout/bottom";
 @import "../layout/title";
-@import "../layout/about"
+@import "../layout/about";
+@import "../layout/contact";
+@import "../layout/footer";
 

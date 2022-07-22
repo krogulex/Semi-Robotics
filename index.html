@@ -37,7 +37,7 @@
         </div>
         <div class="title__item">
           <h1 class="title__headline">Semi Robotics</h1>
-          <span class="title__border"></span>
+          <span class="border"></span>
           <p class="title__text">
             Jesteśmy w pełni polskim przedsiębiorstwem, które projektuje urządzenia wspierające osoby w ich codziennym
             życiu. Obecnie kończymy prace nad robotem karmiącym, który będzie wspierał osoby z niepełnosprawnościami.
@@ -47,21 +47,62 @@
     </section>
     <section class="about">
       <div class="container">
-          <h1 class="about__headline">O projekcie</h1>
-          <span class="about__border"></span>
-          <h2>Z Robotem Karmiącym jedzenie jest przyjemniejsze.</h2>
-          <p class="about__text">
-            Urządzenie dostosowuje się do osoby karmionej, jej postawy oraz tempa spożywania posiłku. Robot Karmiący to połączenie najnowszej technologii, sztucznej inteligencji oraz zaawansowanego oprogramowania.
-          </p>
+        <h1 class="about__headline">O projekcie</h1>
+        <span class="border"></span>
+        <h2 class="about__second-headline">Z Robotem Karmiącym jedzenie jest przyjemniejsze.</h2>
+        <p class="about__text">
+          Urządzenie dostosowuje się do osoby karmionej, jej postawy oraz tempa spożywania posiłku. Robot Karmiący to
+          połączenie najnowszej technologii, sztucznej inteligencji oraz zaawansowanego oprogramowania.
+        </p>
+        <a href="">
+          <button class="about__button" type="button">Więcej</button>
+        </a>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h1 class="contact__headline">Kontakt</h1>
+        <span class="border"></span>
+        <address>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <p class="contact__text">
+                Semi Robotics Sp. z o.o. <br>
+                ul. Prez. G. Narutowicza 40/1 <br>
+                90-135 Łódź
+              </p>
+            </li>
+            <li class="contact__item">
+              <p class="contact__text">
+                <a href="mailto:kontakt@semirobotics.pl">kontakt@semirobotics.pl</a> <br>
+                NIP: 7252318805 <br>
+                KRS: 0000968262
+              </p>
+            </li>
+            </p>
+          </ul>
+        </address>
+        <form class="modal-form" action="#" method="post">
+          <label class="modal-form__label" for="user_name">
+            <input class="modal-form__input" id="user_name" type="text" name="name" placeholder="Imię" required>
+          </label>
+          </label>
+          <label class="modal-form__label" for="user_email">
+            <input class="modal-form__input" id="user_email" type="email" name="email" placeholder="Email" required>
+          </label>
+          <label class="modal-form__label" for="user_feedback">
+            <textarea id="user-feedback" class="modal-form__textarea" name="feedback" placeholder="Wiadomość" rows="6"
+              placeholder="Wprowadź tekst"></textarea>
+          </label>
+          <button class="about__button" type="submit">Wyślij</button>
+        </form>
       </div>
     </section>
   </main>
-
-
-
-
-  <footer>
-
+  <footer class="footer">
+    <div class="container">
+      <p>Semi Robotics</p>
+    </div>
   </footer>
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu__button--close js-close-menu">

@@ -1,19 +1,19 @@
-.about {
-    background-color: $color-background;
+.contact {
+    background-color: $color-background-second;
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.about__headline {
+.contact__headline {
   font-size: 21px;
 }
-.about__second-headline {
-  font-size: 17px;
+.contact__list {
+}
+.contact__text {
   margin-bottom: 20px;
 }
-.about__text {
-  margin-bottom: 20px;
-}
-.about__button {
+
+
+.contact__button {
   width: 100%;
   max-width: 250px;
   height: 50px;
@@ -22,7 +22,6 @@
   background-color: $color-button;
   border: none;
 }
-
 
 @media screen and (min-width: 768px) {
 }
