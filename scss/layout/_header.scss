@@ -3,6 +3,16 @@
 .header__mobile {
   margin-left: auto;
 }
+.header__desktop {
+  display: none;
+}
+.menu-desktop__link {
+  color: $color-accent;
+  font-weight: 400;
+}
+.menu-desktop__link--active {
+  color: $color-button;
+}
 .menu__button {
   height: 50px;
   width: 50px;
@@ -27,10 +37,31 @@
   fill: $color-primary;
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-
+.header__mobile {
+  display: none;
+}
+.header__desktop {
+  display: flex;
+  margin-left: auto;
+}
+.menu-desktop {
+  display: flex;
+}
+.menu-desktop__item:not(:last-child) {
+  margin-right: 60px;
+}
+.menu-desktop__link:hover {
+  color: $color-button;
+  font-weight: 400;
+}
 }
 
 @media screen and (min-width: 1200px) {
-
+  .header__mobile {
+    display: none;
+  }
+  .header__desktop {
+    display: flex;
+  }
   }
 
