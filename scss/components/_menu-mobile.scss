@@ -41,11 +41,22 @@
   width: 40px;
   height: 40px;
   fill: $color-primary;
+  transition: all 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
 }
 .menu-mobile__link {
   text-decoration: none;
   color: $color-primary;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 400ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
 .menu-mobile {
   font-weight: 400;
@@ -57,14 +68,15 @@
 .menu-mobile__link--active {
   color: $color-accent;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .menu-container {
     display: none;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: none;
   }
-  
-  @media screen and (min-width: 1200px) {
-    .menu-container {
-      display: none;
-    }
-    }
+}
