@@ -57,6 +57,7 @@
   background-color: $color-button;
   border: none;
   transition: all 400ms ease-in-out;
+  margin-bottom: 10px;
 
   &:hover {
     background-color: $color-background;
@@ -84,4 +85,7 @@
     margin-bottom: 15px;
     font-size: 20px;
   }
+  .form__button {
+    margin-bottom: 0px;
+}
 }

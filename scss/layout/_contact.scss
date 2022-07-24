@@ -33,13 +33,12 @@
   }
   .contact__img-div {
     width: 50%;
-    position: relative;
+    display: flex;
+    align-items: flex-end;
   }
   .contact__img {
     max-width: 700px;
     max-height: 700px;
-    position: absolute;
-    bottom: 0;
     padding: 0 80px;
   }
   .contact__item-div {
