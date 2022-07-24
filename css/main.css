@@ -64,7 +64,7 @@ a {
   padding: 0 20px;
 }
 .header .container {
-  height: 100px;
+  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -97,11 +97,11 @@ a {
   }
 }
 .logo__img {
-  height: 40px;
+  height: 30px;
 }
 
 .logo__img {
-  height: 50px;
+  height: 40px;
 }
 
 .menu-container {
@@ -210,7 +210,6 @@ a {
 }
 .form__label {
   color: #72827f;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: flex-start;
 }
@@ -225,7 +224,7 @@ a {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 300;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms ease-in-out;
   background-color: #fff;
 }
 .form__input:focus-within {
@@ -248,7 +247,7 @@ a {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 300;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms ease-in-out;
 }
 .form__textarea:focus-within {
   outline: none;
@@ -268,7 +267,6 @@ a {
   color: #fff;
   background-color: #a3b9b8;
   border: none;
-  margin-bottom: 50px;
   transition: all 400ms ease-in-out;
 }
 .form__button:hover {
@@ -289,12 +287,12 @@ a {
   .form__input {
     max-width: 500px;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 20px;
   }
   .form__textarea {
     max-width: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 20px;
   }
 }
@@ -384,7 +382,7 @@ a {
 }
 .title__img {
   width: 100%;
-  height: 350px;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -480,8 +478,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .about__headline {
     font-size: 30px;
@@ -541,8 +539,8 @@ a {
     position: relative;
   }
   .contact__img {
-    max-width: 1000px;
-    max-height: 1000px;
+    max-width: 700px;
+    max-height: 700px;
     position: absolute;
     bottom: 0;
     padding: 0 80px;
@@ -551,7 +549,7 @@ a {
     width: 50%;
     display: flex;
     flex-direction: column;
-    padding: 100px 80px;
+    padding: 60px 80px;
   }
   .contact__headline {
     font-size: 30px;
