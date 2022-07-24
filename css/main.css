@@ -482,7 +482,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .about {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
   }
   .about__headline {
@@ -553,6 +553,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 60px 80px;
+    padding-top: 80px;
   }
   .contact__headline {
     font-size: 30px;
