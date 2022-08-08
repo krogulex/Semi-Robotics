@@ -2,150 +2,230 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semi Robotics homepage</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.png">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semi Robotics homepage</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <style>
+        /* Initially, hide the extra text that
+        can be revealed with the button */
+        #moreText {
+
+            /* Display nothing for the element */
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
-  <header class="header" id="header">
-    <div class="container">
-      <a class="logo__link" href="./index.html">
-        <img class="logo__img" src="images\Logo_Semi_Robotics_achromatyczne.png">
-      </a>
-      <div class="header__mobile">
-        <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-          <svg class="menu__icon">
-            <use href="./images/sprite.svg#icon-menu-open"></use>
-          </svg>
+    <header class="header" id="header">
+        <div class="container">
+            <a class="logo__link" href="./index.html">
+                <img class="logo__img" src="images\Logo_Semi_Robotics_achromatyczne.png">
+            </a>
+            <div class="header__mobile">
+                <button class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu__icon">
+                        <use href="./images/sprite.svg#icon-menu-open"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__desktop">
+                <ul class="menu-desktop">
+                    <li class="menu-desktop__item"><a href="#header"
+                            class="menu-desktop__link menu-desktop__link--active">Home</a></li>
+                    <li class="menu-desktop__item"><a href="#about" class="menu-desktop__link">O projekcie</a></li>
+                    <li class="menu-desktop__item"><a href="#contact" class="menu-desktop__link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="title">
+            <div class="container">
+                <ul class="title__list">
+                    <li class="title__item">
+                        <img class="title__img" src="images\rest-home.jpg">
+                    </li>
+                    <li class="title__item title__item--padding">
+                        <h1 class="title__headline">Semi Robotics</h1>
+                        <span class="border"></span>
+                        <p class="title__text">
+                            Jesteśmy w pełni polskim przedsiębiorstwem, które projektuje urządzenia wspierające osoby w
+                            ich
+                            codziennym
+                            życiu. Obecnie kończymy prace nad robotem karmiącym, który będzie wspierał osoby z
+                            niepełnosprawnościami.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__item">
+                    <h1 class="about__headline">O projekcie</h1>
+                    <span class="border"></span>
+                    <h2 class="about__second-headline">Z Robotem Karmiącym jedzenie jest przyjemniejsze.</h2>
+                </div>
+                <div class="about__item">
+                    <p class="about__text">
+                        Urządzenie dostosowuje się do osoby karmionej, jej postawy oraz tempa spożywania posiłku. Robot
+                        Karmiący to
+                        połączenie najnowszej technologii, sztucznej inteligencji oraz zaawansowanego oprogramowania
+                        <span id="points">...</span>
+
+                        <!-- Define the text that would be 
+                hidden by default and only shown 
+                when clicked on the button -->
+                        <span id="moreText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar
+                            auctor nisi eu viverra. Mauris semper urna in semper lacinia. Vestibulum sit amet
+                            pellentesque velit, quis maximus eros. Aenean luctus erat a ornare accumsan. Integer at
+                            fringilla elit. Quisque libero mi, viverra ac ligula vel, fringilla laoreet quam.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum at tincidunt velit. In eget euismod dolor. In suscipit justo in massa
+                            porta bibendum. Proin quis euismod lacus, molestie tempus enim. Curabitur nibh turpis,
+                            placerat ac aliquam nec, eleifend in mauris.
+                        </span>
+
+                    </p>
+
+
+                    <button class="about__button" id="about__button" type="button"
+                        onclick="toggleText()">Więcej</button>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__item-div">
+                    <h1 class="contact__headline">Kontakt</h1>
+                    <span class="border"></span>
+                    <address>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <p class="contact__text">
+                                    Semi Robotics Sp. z o.o. <br>
+                                    ul. Prez. G. Narutowicza 40/1 <br>
+                                    90-135 Łódź
+                                </p>
+                            </li>
+                            <li class="contact__item">
+                                <p class="contact__text">
+                                    <a href="mailto:kontakt@semirobotics.pl">kontakt@semirobotics.pl</a> <br>
+                                    NIP: 7252318805 <br>
+                                    KRS: 0000968262
+                                </p>
+                            </li>
+                            </p>
+                        </ul>
+                    </address>
+                    <form class="form" action="https://formsubmit.co/krzysztof@stelmach.info" method="post">
+                        <label class="form__label" for="user_name">
+                            <input class="form__input" id="user_name" type="text" name="name" placeholder="Imię"
+                                required>
+                        </label>
+                        </label>
+                        <label class="form__label" for="user_email">
+                            <input class="form__input" id="user_email" type="email" name="email" placeholder="Email"
+                                required>
+                        </label>
+                        <label class="form__label" for="user_feedback">
+                            <textarea id="user-feedback" class="form__textarea" name="feedback" placeholder="Wiadomość"
+                                rows="6" placeholder="Wprowadź tekst" required></textarea>
+                        </label>
+                        <button class="form__button" type="submit">Wyślij</button>
+                    </form>
+                </div>
+                <div class="contact__img-div">
+                    <img class="contact__img" src="images\robot_arm.png">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&#169; 2022 by Semi Robotics</p>
+        </div>
+    </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu__button--close js-close-menu">
+            <svg class="menu__button--close-icon">
+                <use href="./images/sprite.svg#icon-menu-close"></use>
+            </svg>
         </button>
-      </div>
-      <div class="header__desktop">
-        <ul class="menu-desktop">
-          <li class="menu-desktop__item"><a href="#header"
-              class="menu-desktop__link menu-desktop__link--active">Home</a></li>
-          <li class="menu-desktop__item"><a href="#about" class="menu-desktop__link">O projekcie</a></li>
-          <li class="menu-desktop__item"><a href="#contact" class="menu-desktop__link">Kontakt</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="title">
-      <div class="container">
-        <ul class="title__list">
-          <li class="title__item">
-            <img class="title__img" src="images\rest-home.jpg">
-          </li>
-          <li class="title__item title__item--padding">
-            <h1 class="title__headline">Semi Robotics</h1>
-            <span class="border"></span>
-            <p class="title__text">
-              Jesteśmy w pełni polskim przedsiębiorstwem, które projektuje urządzenia wspierające osoby w ich
-              codziennym
-              życiu. Obecnie kończymy prace nad robotem karmiącym, który będzie wspierał osoby z
-              niepełnosprawnościami.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container">
-        <div class="about__item">
-          <h1 class="about__headline">O projekcie</h1>
-          <span class="border"></span>
-          <h2 class="about__second-headline">Z Robotem Karmiącym jedzenie jest przyjemniejsze.</h2>
-        </div>
-        <div class="about__item">
-          <p class="about__text">
-            Urządzenie dostosowuje się do osoby karmionej, jej postawy oraz tempa spożywania posiłku. Robot Karmiący to
-            połączenie najnowszej technologii, sztucznej inteligencji oraz zaawansowanego oprogramowania.
-          </p>
-          <p class="about__text_extended">
-          </p>
-          
-            <button class="about__button" id="about__button" type="button"  onclick="toggleText()">Więcej</button>
-          
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="contact__item-div">
-          <h1 class="contact__headline">Kontakt</h1>
-          <span class="border"></span>
-          <address>
-            <ul class="contact__list">
-              <li class="contact__item">
-                <p class="contact__text">
-                  Semi Robotics Sp. z o.o. <br>
-                  ul. Prez. G. Narutowicza 40/1 <br>
-                  90-135 Łódź
-                </p>
-              </li>
-              <li class="contact__item">
-                <p class="contact__text">
-                  <a href="mailto:kontakt@semirobotics.pl">kontakt@semirobotics.pl</a> <br>
-                  NIP: 7252318805 <br>
-                  KRS: 0000968262
-                </p>
-              </li>
-              </p>
+        <div>
+            <ul class="menu-mobile">
+                <li class="menu-mobile__item"><a href="#header"
+                        class="menu-mobile__link menu-mobile__link--active">Home</a>
+                </li>
+                <li class="menu-mobile__item"><a href="#about" class="menu-mobile__link">O projekcie</a></li>
+                <li class="menu-mobile__item"><a href="#contact" class="menu-mobile__link">Kontakt</a></li>
             </ul>
-          </address>
-          <form class="form" action="https://formsubmit.co/krzysztof@stelmach.info" method="post">
-            <label class="form__label" for="user_name">
-              <input class="form__input" id="user_name" type="text" name="name" placeholder="Imię" required>
-            </label>
-            </label>
-            <label class="form__label" for="user_email">
-              <input class="form__input" id="user_email" type="email" name="email" placeholder="Email" required>
-            </label>
-            <label class="form__label" for="user_feedback">
-              <textarea id="user-feedback" class="form__textarea" name="feedback" placeholder="Wiadomość" rows="6"
-                placeholder="Wprowadź tekst" required></textarea>
-            </label>
-            <button class="form__button" type="submit">Wyślij</button>
-          </form>
         </div>
-        <div class="contact__img-div">
-          <img class="contact__img" src="images\robot_arm.png">
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <p>&#169; 2022 by Semi Robotics</p>
     </div>
-  </footer>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu__button--close js-close-menu">
-      <svg class="menu__button--close-icon">
-        <use href="./images/sprite.svg#icon-menu-close"></use>
-      </svg>
-    </button>
-    <div>
-      <ul class="menu-mobile">
-        <li class="menu-mobile__item"><a href="#header" class="menu-mobile__link menu-mobile__link--active">Home</a>
-        </li>
-        <li class="menu-mobile__item"><a href="#about" class="menu-mobile__link">O projekcie</a></li>
-        <li class="menu-mobile__item"><a href="#contact" class="menu-mobile__link">Kontakt</a></li>
-      </ul>
-    </div>
-  </div>
-  <script src="./js/mobile-menu.js"></script>
-  <script src="./js/scroll.js"></script>
-  
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/scroll.js"></script>
+
 </body>
 <script src="./js/more-text.js"></script>
+<script>
+    function toggleText() {
+
+        // Get all the elements from the page
+        var points =
+            document.getElementById("points");
+
+        var showMoreText =
+            document.getElementById("moreText");
+
+        var buttonText =
+            document.getElementById("about__button");
+
+        // If the display property of the dots 
+        // to be displayed is already set to 
+        // 'none' (that is hidden) then this 
+        // section of code triggers
+        if (points.style.display === "none") {
+
+            // Hide the text between the span
+            // elements
+            showMoreText.style.display = "none";
+
+            // Show the dots after the text
+            points.style.display = "inline";
+
+            // Change the text on button to 
+            // 'Show More'
+            buttonText.innerHTML = "Więcej";
+            buttonText.style.background = "#a3b9b8";
+        }
+
+        // If the hidden portion is revealed,
+        // we will change it back to be hidden
+        else {
+
+            // Show the text between the
+            // span elements
+            showMoreText.style.display = "inline";
+
+            // Hide the dots after the text
+            points.style.display = "none";
+
+            // Change the text on button
+            // to 'Show Less'
+            buttonText.innerHTML = "Mniej";
+            buttonText.style.background = "#a3b9b8";
+        }
+    }
+</script>
+
 </html>
